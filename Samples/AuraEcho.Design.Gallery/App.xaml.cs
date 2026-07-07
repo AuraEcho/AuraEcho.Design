@@ -1,6 +1,6 @@
 using System.Windows;
 
-namespace AuraEcho.Control.Tests;
+namespace AuraEcho.Design.Gallery;
 
 /// <summary>
 /// Interaction logic for App.xaml

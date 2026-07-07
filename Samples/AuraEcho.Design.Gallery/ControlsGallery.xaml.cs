@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace AuraEcho.Control.Tests
+namespace AuraEcho.Design.Gallery
 {
     /// <summary>
     /// ControlsGallery.xaml 的交互逻辑

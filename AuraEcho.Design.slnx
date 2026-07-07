@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Samples/">
+    <Project Path="Samples/AuraEcho.Design.Gallery/AuraEcho.Design.Gallery.csproj" />
+  </Folder>
   <Folder Name="/SRC/">
     <Project Path="SRC/AuraEcho.Design/AuraEcho.Design.csproj" />
   </Folder>

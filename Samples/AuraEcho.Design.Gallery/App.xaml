@@ -1,7 +1,7 @@
-<Application x:Class="AuraEcho.Control.Tests.App"
+<Application x:Class="AuraEcho.Design.Gallery.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:AuraEcho.Control.Tests"
+             xmlns:local="clr-namespace:AuraEcho.Design.Gallery"
              xmlns:ui="http://ui.auraecho.com/"
              StartupUri="MainWindow.xaml">
     <Application.Resources>

@@ -1,7 +1,7 @@
 using System.Windows;
 using System.Windows.Input;
 
-namespace AuraEcho.Control.Tests;
+namespace AuraEcho.Design.Gallery;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml
