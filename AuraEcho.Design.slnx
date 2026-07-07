@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/SRC/">
+    <Project Path="SRC/AuraEcho.Design/AuraEcho.Design.csproj" />
+  </Folder>
+</Solution>
