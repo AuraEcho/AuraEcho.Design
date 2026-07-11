@@ -17,24 +17,27 @@
                               IsTabStop="False"
                               HorizontalScrollBarVisibility="Hidden"
                               VerticalScrollBarVisibility="Hidden" />
-                <TextBlock x:Name="PlaceHolderTextBlock"
-                           Margin="{TemplateBinding Padding}"
-                           Padding="3, 0"
-                           HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                           VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                           Background="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=(ap:InputBoxHelper.FloatingBackground)}"
-                           FontSize="{TemplateBinding FontSize}"
-                           Foreground="#49454E"
-                           IsHitTestVisible="False"
-                           RenderTransformOrigin="0, 0.5"
-                           Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=(ap:ControlHelper.PlaceHolder)}">
-                    <TextBlock.RenderTransform>
+                <Grid Margin="{TemplateBinding Padding}"
+                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                      IsHitTestVisible="False"
+                      RenderTransformOrigin="0, 0.5">
+                    <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform x:Name="PlaceHolderScaleTransform" />
                             <TranslateTransform x:Name="PlaceHolderTranslateTransform" Y="0" />
                         </TransformGroup>
-                    </TextBlock.RenderTransform>
-                </TextBlock>
+                    </Grid.RenderTransform>
+                    <Border x:Name="PlaceHolderBackground"
+                            Background="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=(ap:InputBoxHelper.FloatingBackground)}"
+                            Opacity="0" />
+                    <TextBlock x:Name="PlaceHolderTextBlock"
+                               Padding="3, 0"
+                               Background="Transparent"
+                               FontSize="{TemplateBinding FontSize}"
+                               Foreground="#49454E"
+                               Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=(ap:ControlHelper.PlaceHolder)}" />
+                </Grid>
             </Grid>
         </Grid>
         <ControlTemplate.Triggers>
@@ -69,6 +72,10 @@
                                     <CircleEase EasingMode="EaseOut" />
                                 </DoubleAnimation.EasingFunction>
                             </DoubleAnimation>
+                            <DoubleAnimation Storyboard.TargetName="PlaceHolderBackground"
+                                             Storyboard.TargetProperty="Opacity"
+                                             To="1"
+                                             Duration="0:0:0.1" />
                         </Storyboard>
                     </BeginStoryboard>
                 </Trigger.EnterActions>
@@ -108,6 +115,10 @@
                                     <CircleEase EasingMode="EaseOut" />
                                 </DoubleAnimation.EasingFunction>
                             </DoubleAnimation>
+                            <DoubleAnimation Storyboard.TargetName="PlaceHolderBackground"
+                                             Storyboard.TargetProperty="Opacity"
+                                             To="0"
+                                             Duration="0:0:0.1" />
                         </Storyboard>
                     </BeginStoryboard>
                 </MultiTrigger.EnterActions>
@@ -138,6 +149,10 @@
                                     <CircleEase EasingMode="EaseOut" />
                                 </DoubleAnimation.EasingFunction>
                             </DoubleAnimation>
+                            <DoubleAnimation Storyboard.TargetName="PlaceHolderBackground"
+                                             Storyboard.TargetProperty="Opacity"
+                                             To="1"
+                                             Duration="0:0:0.1" />
                         </Storyboard>
                     </BeginStoryboard>
                 </MultiTrigger.ExitActions>
