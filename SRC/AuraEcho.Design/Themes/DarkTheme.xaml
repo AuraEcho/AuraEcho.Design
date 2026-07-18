@@ -12,6 +12,7 @@
         <ResourceDictionary Source="Dark/CheckBox.xaml" />
         <ResourceDictionary Source="Dark/ScrollViewer.xaml" />
         <ResourceDictionary Source="Dark/Slider.xaml" />
+        <ResourceDictionary Source="Common/TextEditingContextMenu.xaml" />
         <ResourceDictionary Source="Dark/Textbox.xaml" />
         <ResourceDictionary Source="Dark/PasswordBox.xaml" />
         <ResourceDictionary Source="Dark/ComboBox.xaml" />

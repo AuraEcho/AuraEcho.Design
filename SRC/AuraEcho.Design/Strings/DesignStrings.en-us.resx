@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TextMenu_Undo" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="TextMenu_Cut" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="TextMenu_Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="TextMenu_Paste" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="TextMenu_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="TextMenu_SelectAll" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+</root>

@@ -152,6 +152,7 @@
         <Setter Property="CaretBrush" Value="{DynamicResource Brushes.OnSurface}" />
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Foreground" Value="{DynamicResource Brushes.OnSurface}" />
+        <Setter Property="ContextMenu" Value="{DynamicResource TextEditingContextMenu}" />
         <Setter Property="Template" Value="{StaticResource FloatingLabelTextBoxTemplate}" />
         <Setter Property="HorizontalContentAlignment" Value="Left" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
@@ -220,6 +221,7 @@
         <Setter Property="CaretBrush" Value="{DynamicResource Brushes.OnSurface}" />
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Foreground" Value="{DynamicResource Brushes.OnSurface}" />
+        <Setter Property="ContextMenu" Value="{DynamicResource TextEditingContextMenu}" />
         <Setter Property="Template" Value="{StaticResource PlaceHolderTextBoxTemplate}" />
         <Setter Property="HorizontalContentAlignment" Value="Left" />
         <Setter Property="VerticalContentAlignment" Value="Center" />

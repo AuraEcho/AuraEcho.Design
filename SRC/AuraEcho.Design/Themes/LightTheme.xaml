@@ -13,6 +13,7 @@
         <ResourceDictionary Source="Light/MenuItem.xaml" />
         <ResourceDictionary Source="Light/Menu.xaml" />
         <ResourceDictionary Source="Light/ContextMenu.xaml" />
+        <ResourceDictionary Source="Common/TextEditingContextMenu.xaml" />
         <ResourceDictionary Source="Light/TextBox.xaml" />
         <ResourceDictionary Source="Light/PasswordBox.xaml" />
         <ResourceDictionary Source="Light/Hyperlink.xaml" />
